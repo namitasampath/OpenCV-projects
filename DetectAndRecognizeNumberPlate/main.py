@@ -16,6 +16,7 @@ while True:
 
     for(x,y,w,h) in plates:
         cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
+        cv2.putText(img, "Number Plate",(x,y-5),cv2.FONT_HERSHEY_COMPLEX_SMALL,1,(255,0,255),2)
 
     cv2.imshow("car Plate",img)
 
